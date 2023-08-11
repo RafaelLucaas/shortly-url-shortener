@@ -3,6 +3,7 @@
 import { Button } from "./Button";
 import { useState, useEffect } from "react";
 import { ShortedLinkMenu } from "./ShortedLinkMenu";
+import { AnimatePresence, motion } from "framer-motion";
 
 export function ShortLinkInput({ className }) {
   const [inputLink, setInputLink] = useState("");
@@ -119,15 +120,29 @@ export function ShortLinkInput({ className }) {
         </form>
       </div>
       <div className="flex flex-col gap-6">
-        {linkHistory.map((link, index) =>
-          <ShortedLinkMenu
-            key={index}
-            shorteredLink={link.shortened}
-            originalLink={link.original}
-            buttonCopied={link.buttonCopied}
-            copyToClipboard={() => copyToClipboard(index)}
-          />
-        )}
+        <AnimatePresence>
+          {linkHistory.map((link, index) =>
+            <motion.div
+              key={index}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+              variants={{
+                initial: { opacity: 0, translateY: -40 },
+                animate: { translateY: 0, opacity: 1 },
+                exit: { opacity: 0, translateY: -40 }
+              }}
+              transition={{ duration: 0.2 }}
+            >
+              <ShortedLinkMenu
+                shorteredLink={link.shortened}
+                originalLink={link.original}
+                buttonCopied={link.buttonCopied}
+                copyToClipboard={() => copyToClipboard(index)}
+              />
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </div>
   );

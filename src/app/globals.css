@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.exitAnimation {
+  opacity: 0;
+  transform: translateY(-10px); /* Pode ajustar a animação de saída aqui */
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
