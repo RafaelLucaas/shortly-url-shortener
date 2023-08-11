@@ -20,7 +20,7 @@ export function ShortedLinkMenu({
 
   return (
     <div>
-      <div className="bg-white rounded-lg shadow-sm max-w-[1024px] w-[1024px] max-lg:w-full">
+      <div className="bg-white rounded-lg shadow-sm max-w-[950px] w-[950px] max-lg:w-full">
         <div className="flex items-center px-5 pt-4 pb-3 text-gray-700 font-[500] border-b border-gray-200">
           <span>
             {originalLink}

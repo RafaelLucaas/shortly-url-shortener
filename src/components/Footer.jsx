@@ -95,7 +95,7 @@ export function Footer() {
           </ul>
         </div>
       </div>
-      <div className="w-full px-16 pb-6 text-center text-white">
+      <div className="w-full px-16 pb-6 text-center text-neutralgray">
         <p>
           This page is a challenge made by{" "}
           <a

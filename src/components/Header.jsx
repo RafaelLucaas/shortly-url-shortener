@@ -78,19 +78,19 @@ export function Header() {
               <ul className="flex flex-col gap-7 text-white font-[700] py-10 text-xl">
                 <Link
                   href="#"
-                  className="transition-all duration-150 hover:text-gray-700"
+                  className="transition-all duration-150 hover:brightness-75"
                 >
                   <li>Features</li>
                 </Link>
                 <Link
                   href="#"
-                  className="transition-all duration-150 hover:text-gray-700"
+                  className="transition-all duration-150 hover:brightness-75"
                 >
                   <li>Pricing</li>
                 </Link>
                 <Link
                   href="#"
-                  className="transition-all duration-150 hover:text-gray-700"
+                  className="transition-all duration-150 hover:brightness-75"
                 >
                   <li>Resources</li>
                 </Link>
@@ -99,7 +99,7 @@ export function Header() {
             <div className="flex flex-col w-full pt-8 pb-10 border-t border-gray-500 gap-7">
               <Link
                 href="#"
-                className="text-white font-[700] text-xl transition-all duration-150 hover:text-gray-700"
+                className="text-white font-[700] text-xl transition-all duration-150 hover:brightness-75"
               >
                 Login
               </Link>
