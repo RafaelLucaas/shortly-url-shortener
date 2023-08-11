@@ -15,7 +15,7 @@ export function Footer() {
           <Link href="#">
             <Image
               priority={true}
-              src="/logo-white.svg"
+              src="logo-white.svg"
               width="140"
               height="36"
               alt="Shortly logo"
