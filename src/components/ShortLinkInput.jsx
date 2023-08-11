@@ -89,7 +89,7 @@ export function ShortLinkInput({ className }) {
   };
 
   return (
-    <div className="max-w-[1024px] w-[1024px] max-lg:w-full flex flex-col gap-6">
+    <div className="max-w-[970px] w-[970px] max-lg:w-full flex flex-col gap-6">
       <div className="p-6 lg:p-14 rounded-xl bg-primarydarkviolet bg-[url('/bg-shorten-mobile.svg')] lg:bg-[url('/bg-shorten-desktop.svg')] bg-no-repeat bg-right-top ${className} max-w-[1024px] w-[1024px] max-lg:w-full lg:bg-cover shadow-sm">
         <form className="flex flex-col items-center justify-center lg:flex-row lg:gap-6">
           <div className="relative flex flex-col items-center justify-center w-full">
