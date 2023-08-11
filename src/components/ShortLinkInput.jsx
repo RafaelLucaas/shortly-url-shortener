@@ -124,14 +124,9 @@ export function ShortLinkInput({ className }) {
           {linkHistory.map((link, index) =>
             <motion.div
               key={index}
-              initial="initial"
-              animate="animate"
-              exit="exit"
-              variants={{
-                initial: { opacity: 0, translateY: -40 },
-                animate: { translateY: 0, opacity: 1 },
-                exit: { opacity: 0, translateY: -40 }
-              }}
+              initial={{ opacity: 0, translateY: -40 }}
+              animate={{ translateY: 0, opacity: 1 }}
+              exit={{ opacity: 0, translateY: 40 }}
               transition={{ duration: 0.2 }}
             >
               <ShortedLinkMenu
