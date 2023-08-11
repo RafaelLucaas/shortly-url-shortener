@@ -22,7 +22,7 @@ export function Header() {
           <Link href="/">
             <Image
               priority={true}
-              src="/logo.svg"
+              src="logo.svg"
               width="140"
               height="36"
               alt="Shortly logo"
