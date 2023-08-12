@@ -1,14 +1,14 @@
+'use client'
+
 import { Button } from '@/components/Button'
 import { CardInfo } from '@/components/CardInfo'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { BoostMenu } from '@/components/BoostMenu'
 import { ShortLinkInput } from '@/components/ShortLinkInput'
-import Image from 'next/image'
 import Link from 'next/link'
 import { BsBarChartLine, BsSpeedometer } from 'react-icons/bs'
 import { FaPaintBrush } from 'react-icons/fa'
-import { ShortedLinkMenu } from '@/components/ShortedLinkMenu'
 
 export default function Home() {
   return (
